@@ -1,0 +1,1 @@
+# yama-shopify-theme
