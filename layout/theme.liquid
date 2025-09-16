@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ shop.name }} — Product of the Week & Social Features</title>
+  <meta name="description" content="{{ shop.meta_description }}" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+  <script src="{{ 'theme.js' | asset_url }}"></script>
+</head>
+<body>
+  {{ content_for_header }}
+  {% section 'main-home' %}
+  <footer>
+    © {{ 'now' | date: "%Y" }} {{ shop.name }} • Built for creators
+  </footer>
+  {{ content_for_footer }}
+</body>
+</html>
